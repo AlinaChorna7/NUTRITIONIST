@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheets" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Іконка для світлої теми -->
+    <link
+      rel="icon"
+      href="./images/cloud.png"
+      media="(prefers-color-scheme: light)"
+    />
+    <!-- Іконка для темної теми -->
+    <link
+      rel="icon"
+      href="./images/cloud (1).png"
+      media="(prefers-color-scheme: dark)"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <form>
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Enter your city"
+            required
+          />
+          <button class="search-button">Find</button>
+        </form>
+      </div>
+      <div class="weather-bar">
+        <h2 class="city-name"></h2>
+        <img
+          src="./images/weather-app_7059514.png"
+          alt="all-weather"
+          class="weather-bar-image"
+        />
+        <p class="temperature"></p>
+        <p class="description"></p>
+        <p class="humidity"></p>
+        <p class="wind-speed"></p>
+      </div>
+      <div class="next-week-bar">
+        <h3 class="week-forecast">Week Forcast</h3>
+        <ul class="week-weather-list">
+          <li class="week-day">
+            <span class="date"></span>
+            <img class="weather-icon" src="" alt="" />
+            <p class="forecast-temperature"></p>
+          </li>
+        </ul>
+      </div>
+      <div class="error-weather" id="error"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
