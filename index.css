@@ -24,3 +24,8 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
