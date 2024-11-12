@@ -8,31 +8,60 @@
   </head>
   <body>
     <header>
-      <div href="./index.html" class="header-div">
-        <svg width="34px" height="34px" class="header-svg">
-          <use href="./images/icons.svg#logo"></use>
-        </svg>
-        <h2>Nutritionist</h2>
-      </div>
-      <div>
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a href="./index.html" class="head-nav">Home</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#features" class="head-nav">Feature</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#blogs" class="head-nav">Blogs</a>
-          </li>
-          <li class="header-menu-item">
-            <a href="#Testimonials" class="head-nav">Testimonials</a>
-          </li>
-         
-        </ul>
-        <button class="header-button">Contact us</button>
+      <nav class="header-nav">
+        <div class="header-div">
+          <svg width="34px" height="34px" class="header-svg">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
+          <h2>Nutritionist</h2>
+        </div>
+        
+        
+        <div class="main-menu">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="./index.html" class="head-nav">Home</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#features" class="head-nav">Feature</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#blogs" class="head-nav">Blogs</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#Testimonials" class="head-nav">Testimonials</a>
+            </li>
+          </ul>
+          <button class="header-button">Contact us</button>
+        </div>
+        
+   
+        <button type="button" class="js-open-menu header-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="34px" height="34px" class="header-svg">
+            <use href="./images/icons.svg#menu-icon"></use>
+          </svg>
+        </button>
+      </nav>
+      
+   
+      <div class="backdrop js-menu-container" id="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-menu">
+            <li><a href="./index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="#features" class="mobile-nav-link">Feature</a></li>
+            <li><a href="#blogs" class="mobile-nav-link">Blogs</a></li>
+            <li><a href="#Testimonials" class="mobile-nav-link">Testimonials</a></li>
+          </ul>
+          <button class="header-button mobile-contact-btn">Contact us</button>
+          <button type="button" class="js-close-menu mobile-close-btn">
+            <svg width="24px" height="24px" class="header-svg">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+        </nav>
       </div>
     </header>
+    
     <main>
       <div class="container">
         <div id="start" class="start">
