@@ -1,0 +1,40 @@
+/* Базові стилі для великого екрану */
+#main-header .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #main-header .js-open-menu {
+    display: none;
+  }
+  
+  /* Стилі для мобільної версії */
+  @media screen and (max-width: 768px) {
+    #main-header .main-menu {
+      display: none;
+    }
+  
+    #main-header .js-open-menu {
+      display: block;
+    }
+  
+    #main-header .backdrop.js-menu-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 10;
+    }
+  
+    #main-header .backdrop.js-menu-container.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
