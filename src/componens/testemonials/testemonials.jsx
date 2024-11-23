@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import '../../src/css/styles.css';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-export default function App() {
+export default function Testemonials() {
   return (
     <>
       <Swiper
