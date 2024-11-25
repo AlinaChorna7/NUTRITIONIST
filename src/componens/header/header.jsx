@@ -1,50 +1,53 @@
-import React, { useState } from 'react';
-import MobileMenu from './mobileMenu';
-import styles from './header.module.css';
+import { useState } from "react";
+import styles from "./Header.module.css";
+import mobileStyles from "./MobileMenu.module.css";
 
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen((prev) => !prev);
-    document.body.style.overflow = isMenuOpen ? 'auto' : 'hidden';
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
+    <>
+      <header className={styles.header}>
         <div className={styles.logo}>
-          <svg width="34px" height="34px" className={styles.logoIcon}>
+        <svg width="34px" height="34px" className={styles.logoIcon}>
             <use href="./images/icons.svg#logo"></use>
           </svg>
-          <h2>Nutritionist</h2>
         </div>
-
-        {/* Десктопна навігація */}
         <nav className={styles.nav}>
-          <ul className={styles.menu}>
-            <li><a href="./index.html" className={styles.link}>Home</a></li>
-            <li><a href="#features" className={styles.link}>Features</a></li>
-            <li><a href="#blogs" className={styles.link}>Blogs</a></li>
-            <li><a href="#testimonials" className={styles.link}>Testimonials</a></li>
-          </ul>
-          <button className={styles.contactButton}>Contact us</button>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </nav>
-
-        {/* Кнопка мобільного меню */}
-        <button
-          className={styles.menuButton}
-          onClick={toggleMenu}
-          aria-expanded={isMenuOpen}
-        >
-          <svg width="34px" height="34px">
-            <use href="./images/icons.svg#menu-icon"></use>
-          </svg>
+        <button className={styles.menuButton} onClick={toggleMenu}>
+          ☰
         </button>
-      </div>
+      </header>
 
-      {/* Мобільне меню */}
-      {isMenuOpen && <MobileMenu onClose={toggleMenu} />}
-    </header>
+      <div
+        className={`${mobileStyles.mobileMenu} ${
+          menuOpen ? mobileStyles.open : ""
+        }`}
+      >
+        <button
+          className={mobileStyles.closeButton}
+          onClick={toggleMenu}
+        >
+          ✕
+        </button>
+        <nav>
+          <a href="#home" onClick={toggleMenu}>Home</a>
+          <a href="#about" onClick={toggleMenu}>About</a>
+          <a href="#services" onClick={toggleMenu}>Services</a>
+          <a href="#contact" onClick={toggleMenu}>Contact</a>
+        </nav>
+      </div>
+    </>
   );
-}
+};
+
+export default Header;

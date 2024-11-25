@@ -62,3 +62,5 @@ return(
 
 )
 };
+
+export default Footer;
