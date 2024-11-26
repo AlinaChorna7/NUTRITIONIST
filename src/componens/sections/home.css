@@ -100,6 +100,14 @@ text-align: start;
  height: auto;
 }
 
+.main-flex{
+    align-items: center;
+}
+
+.start-text{
+    text-align: center;
+}
+
 .start-main-text{
     font-weight: 700;
     font-size: 48px;

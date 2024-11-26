@@ -74,3 +74,45 @@ color: #333;
 }
 
 
+@media (min-width:  1201px){
+
+    .features{
+        margin-top: 100px;
+    }
+
+
+.features-header-main{
+font-size: 38px;
+}
+
+.features-p{
+font-size: 16px;
+}
+
+
+
+  .features-list {
+  flex-direction: row;
+ 
+    flex-wrap:wrap; 
+    gap: 20px;
+    justify-content: center;
+    
+    
+  }
+
+  .features-item {
+    width: calc((100% - 40px)/2);
+    box-sizing: border-box;
+  }
+
+ 
+
+
+}
+
+
+
+
+
+

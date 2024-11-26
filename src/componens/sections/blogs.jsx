@@ -1,4 +1,4 @@
-
+import './blogs.css';
 
 
 const Blogs = ()=>{
@@ -13,7 +13,8 @@ return(
       </p>
     </div>
     <div className="blogs-box">
-      <img
+     <div className="blogs-card">
+       <img
         src="../../../images/blogs-water.png"
         alt="woman drink water"
         className="blogs-photo"
@@ -27,10 +28,12 @@ return(
           Benefits of Hydration for Weight Loss</a
         >
       </h3>
+
       <p className="blogs-p">
         Discover how staying hydrated can support your weight loss goals
         and improve overall health.
       </p>
+      </div>
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author-two.png"
