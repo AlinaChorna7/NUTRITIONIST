@@ -1,4 +1,4 @@
-
+import './features.css';
 
 
 const Features = ()=>{
@@ -12,9 +12,7 @@ return ( <div id="features" className="features">
       <ul className="features-list">
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-one"></use>
-            </svg>
+           
             <h3 className="features-header">Personalized Nutrition Plans</h3>
           </div>
           <div className="feat-p">

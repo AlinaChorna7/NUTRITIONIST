@@ -1,102 +1,116 @@
-/* Загальні стилі для хедера */
+/* Хедер */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f5f5f5; /* Світлий фон */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Невелика тінь */
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Темний текст */
-    text-transform: uppercase;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #555;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .nav a:hover {
-    color: #000; /* Темніший текст при наведенні */
-  }
-  
-  /* Стилі для кнопки меню в мобільній версії */
-  .menuButton {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-  }
-  
-  @media (max-width: 768px) {
-    .nav {
-      display: none; /* Ховаємо меню на малих екранах */
-    }
-  
-    .menuButton {
-      display: block; /* Показуємо кнопку для меню */
-    }
-  }
-  
-  /* Модальне меню */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a3129;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Лого */
+.HeaderTitle {
+  font-family: var(--second-family);
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Навігація */
+.nav {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fafdf2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #cbea7b;
+}
+
+/* Кнопка меню для мобільних */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fafdf2;
+}
+
+/* Мобільне меню */
 .mobileMenu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f5f5f5; /* Колір фону як у сайту */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a3129;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobileMenu.open {
+  transform: translateX(0);
+}
+
+.mobileMenu .closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fafdf2;
+}
+
+.mobileMenu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: #fafdf2;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mobileMenu a:hover {
+  color: #cbea7b;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Ховаємо звичайне меню на мобільних */
   }
-  
-  .mobileMenu.open {
-    transform: translateX(0); /* Відкриваємо меню */
+
+  .menuButton {
+    display: block;
+    fill: #fafdf2;
+    stroke: #fafdf2;
+    color: #fafdf2;
   }
-  
-  .mobileMenu .closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
+}
+
+@media (min-width: 769px) {
+  .mobileMenu {
+    display: none; /* Ховаємо мобільне меню для великих екранів */
   }
-  
-  .mobileMenu nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .mobileMenu a {
-    text-decoration: none;
-    color: #555;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  
-  .mobileMenu a:hover {
-    color: #000; /* Темний текст при наведенні */
-  }
-  
+}

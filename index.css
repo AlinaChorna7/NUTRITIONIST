@@ -1,7 +1,12 @@
-body{
+:root{
     --font-family: "Urbanist", sans-serif;
     --second-family: "Inter", sans-serif;
     width: 100%;
+    background-color: #fdfefb;
+
+   
+      
+
   }
   h1, h2, h3, h4, h5, h6, p{
     margin-top: 0;
@@ -26,5 +31,26 @@ img{
 }
 
 
+.container{
+    --font-family: "Urbanist", sans-serif;
+    --second-family: "Inter", sans-serif;
+}
 
+@media (min-width: 1201px) {
+ .container{
+    margin: 0;
+    padding: 0 20px; 
+ }
+  }
 
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+      padding:0 20px; /* Менші відступи, зручні для планшетів */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      padding:0 10px; /* Компактний відступ для мобільних пристроїв */
+    }
+  }

@@ -8,7 +8,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function Testemonials() {
   return (
-    <>
+    <div  id='testemonials'>
       <Swiper
         cssMode={true}
         navigation={true}
@@ -16,7 +16,7 @@ export default function Testemonials() {
         mousewheel={true}
         keyboard={true}
         slidesPerView={3}  
-       
+      
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
@@ -139,6 +139,6 @@ export default function Testemonials() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

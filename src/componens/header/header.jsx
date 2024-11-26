@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styles from "./Header.module.css";
-import mobileStyles from "./MobileMenu.module.css";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,38 +11,45 @@ const Header = () => {
   return (
     <>
       <header className={styles.header}>
-        <div className={styles.logo}>
-        <svg width="34px" height="34px" className={styles.logoIcon}>
-            <use href="./images/icons.svg#logo"></use>
-          </svg>
+        <div className={styles.logoHeader}>
+          <h2 className={styles.HeaderTitle}>Nutritionist</h2>
         </div>
+
+        {/* Навігація для великих екранів */}
         <nav className={styles.nav}>
           <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <a href="#blogs">Blogs</a>
+          <a href="#testemonials">Testemonials</a>
+          <a href="#features">Features</a>
         </nav>
+
+        {/* Кнопка для відкриття мобільного меню */}
         <button className={styles.menuButton} onClick={toggleMenu}>
-          ☰
+          <svg width="23px" height="23px" className={styles.menuBtn}>
+            <use href="../../../images/icons.svg#menu" />
+          </svg>
         </button>
       </header>
 
+      {/* Мобільне меню */}
       <div
-        className={`${mobileStyles.mobileMenu} ${
-          menuOpen ? mobileStyles.open : ""
+        className={`${styles.mobileMenu} ${
+          menuOpen ? styles.open : ""
         }`}
       >
         <button
-          className={mobileStyles.closeButton}
+          className={styles.closeButton}
           onClick={toggleMenu}
         >
-          ✕
+          <svg width="23px" height="23px">
+            <use href="../../../images/icons.svg#close-menu" />
+          </svg>
         </button>
         <nav>
           <a href="#home" onClick={toggleMenu}>Home</a>
-          <a href="#about" onClick={toggleMenu}>About</a>
-          <a href="#services" onClick={toggleMenu}>Services</a>
-          <a href="#contact" onClick={toggleMenu}>Contact</a>
+          <a href="#blogs" onClick={toggleMenu}>Blogs</a>
+          <a href="#testemonials" onClick={toggleMenu}>Testemonials</a>
+          <a href="#features" onClick={toggleMenu}>Features</a>
         </nav>
       </div>
     </>

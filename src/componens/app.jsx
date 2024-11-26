@@ -17,7 +17,7 @@ const App = () => {
           <div className="container">
             <Home/>
             <Features />
-            <Testemonials/>
+            <Testemonials />
             <Blogs />
           </div>
         </main>
