@@ -1,5 +1,10 @@
 .blogs{
     width: 358px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 .blogs-title{
@@ -10,6 +15,7 @@ font-size: 28px;
 line-height: 150%;
 text-align: center;
 color: #262626;
+
 }
 
 .blogs-text{
@@ -53,7 +59,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 150%;
 color: #333;
-text-align: left;
+
 }
 
 .blogs-box-title{
@@ -94,4 +100,19 @@ background-color:  #fafdf2;
     width: 40px;
     height: auto;
     border-radius: 6px;
+}
+
+@media (min-width: 768px){
+    
+    .blogs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* .blogs-box{
+        width: calc((100% - 40px)/2);
+        box-sizing: border-box;
+    } */
 }
