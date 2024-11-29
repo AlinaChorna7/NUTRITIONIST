@@ -12,7 +12,8 @@ return(
         experts. Here's what you can expect from our blog.
       </p>
     </div>
-    <div className="blogs-box">
+    <ul className='blogs-list'>
+      <li className='blogs-item'><div className="blogs-box">
      <div className="blogs-card">
        <img
         src="../../../images/blogs-water.png"
@@ -45,8 +46,8 @@ return(
           <li className="blogs-author-desc">23 May 2023</li>
         </ul>
       </div>
-    </div>
-    <div className="blogs-box">
+    </div></li>
+      <li className='blogs-item'> <div className="blogs-box">
       <img
         src="../../../images/blogs-choosing.jpg"
         alt="woman with apple and burger"
@@ -77,7 +78,8 @@ return(
         </ul>
       </div>
     </div>
-    <div className="blogs-box">
+</li>
+      <li className='blogs-item'>    <div className="blogs-box">
       <img
         src="../../../images/blogs-two-woman.jpg"
         alt="two females with food in hands"
@@ -107,8 +109,9 @@ return(
         </ul>
       </div>
     </div>
-    <div className="blogs-box">
-      <img src="../../../images/blogs-food.png" alt="food" className="blogs-photo" />
+</li>
+      <li className='blogs-item'> <div className="blogs-box">
+      <img src="../../../images/blogs-food.jpg" alt="food" className="blogs-photo" />
       <h4 className="blogs-subtitle">Healthy Snacks on the Go</h4>
       <h3 className="blogs-box-title">
         <a href="https://www.eatthis.com/grab-and-go/" target="_blank"
@@ -130,7 +133,10 @@ return(
           <li className="blogs-author-dsc">7 Decembre 2023</li>
         </ul>
       </div>
-    </div>
+    </div></li>
+    </ul>
+    
+      
     </div>
 )
 };

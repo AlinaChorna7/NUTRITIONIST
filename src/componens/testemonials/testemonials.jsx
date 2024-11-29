@@ -8,15 +8,19 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 export default function Testemonials() {
   return (
-    <div  id='testemonials'>
+    <div id="testemonials">
+      <h2>What Our Clients Say</h2>
       <Swiper
         cssMode={true}
         navigation={true}
-        pagination={true}
+        pagination={{ clickable: true }}
         mousewheel={true}
         keyboard={true}
-        slidesPerView={3}  
-      
+        slidesPerView={1}
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
       >
@@ -66,74 +70,6 @@ export default function Testemonials() {
               <div className="testi-down">
                 <img src="./images/review-woman-five.png" alt="woman" />
                 <p className="review-author">Michael Lee</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="swiper-content">
-            <div className="testi-up">
-              <svg width="34px" height="34px" className="icon-review-testi">
-                <use href="./images/icons.svg#testi" className="icon-testi"></use>
-              </svg>
-              <p className="testi-text">
-                Working with Nutritionist was the best decision I've ever made. Their approach was not only professional but also compassionate. I feel healthier, stronger, and more in control of my eating habits than ever before.
-              </p>
-              <div className="testi-down">
-                <img src="./images/review-man.png" alt="man" />
-                <p className="review-author">James Smith</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="swiper-content">
-            <div className="testi-up">
-              <svg width="34px" height="34px" className="icon-review-testi">
-                <use href="./images/icons.svg#testi" className="icon-testi"></use>
-              </svg>
-              <p className="testi-text">
-                I had struggled with my weight for years until I found Nutritionist. Their personalized approach and tailored nutrition plan made all the difference. I've never felt better!
-              </p>
-              <div className="testi-down">
-                <img src="./images/review-woman-one.png" alt="woman" />
-                <p className="review-author">Emily Davis</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="swiper-content">
-            <div className="testi-up">
-              <svg width="34px" height="34px" className="icon-review-testi">
-                <use href="./images/icons.svg#testi" className="icon-testi"></use>
-              </svg>
-              <p className="testi-text">
-                I struggled with emotional eating for years, but Nutritionist gave me the tools I needed to create a healthier relationship with food. The guidance and support have been invaluable in my transformation!
-              </p>
-              <div className="testi-down">
-                <img src="./images/review-woman.png" alt="woman" />
-                <p className="review-author">Olivia Brown</p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="swiper-content">
-            <div className="testi-up">
-              <svg width="34px" height="34px" className="icon-review-testi">
-                <use href="./images/icons.svg#testi" className="icon-testi"></use>
-              </svg>
-              <p className="testi-text">
-                Nutritionist helped me discover the power of balanced eating. The customized meal plans and expert advice have truly changed my life for the better. I feel more energized and confident every day!
-              </p>
-              <div className="testi-down">
-                <img src="./images/review-women-three.png" alt="woman" />
-                <p className="review-author">Sarah Williams</p>
               </div>
             </div>
           </div>
