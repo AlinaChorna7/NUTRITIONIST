@@ -9,7 +9,8 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 export default function Testemonials() {
   return (
     <div id="testemonials">
-      <h2>What Our Clients Say</h2>
+      <h2 className='testi-title'>Our Testimonials</h2>
+      <p className='testi-p'>Our satisfied clients share their success stories and experiences on their journey to better health and well-being.</p>
       <Swiper
         cssMode={true}
         navigation={true}

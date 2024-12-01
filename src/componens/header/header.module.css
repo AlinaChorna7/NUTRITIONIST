@@ -6,13 +6,11 @@
   padding: 20px;
   background-color: #1a3129;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --font-family: "Urbanist", sans-serif;
-  --second-family: "Inter", sans-serif;
 }
 
 /* Лого */
 .HeaderTitle {
-  font-family: var(--second-family);
+  font-family: "Inter", sans-serif;
   font-size: 28px;
   font-weight: bold;
   color: #fff;
@@ -24,11 +22,9 @@
 .nav {
   display: flex;
   gap: 20px;
-  padding-right: 20px;
 }
 
 .nav a {
-  font-family: var (--second-family);
   text-decoration: none;
   color: #fafdf2;
   font-size: 16px;
@@ -44,9 +40,12 @@
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
   cursor: pointer;
-  color: #fafdf2;
+}
+
+.menuIcon {
+  fill: #fafdf2;
+  stroke: #fafdf2;
 }
 
 /* Мобільне меню */
@@ -76,9 +75,7 @@
   right: 20px;
   background: none;
   border: none;
-  font-size: 24px;
   cursor: pointer;
-  color: #fafdf2;
 }
 
 .mobileMenu nav {
@@ -101,19 +98,16 @@
 /* Медіа-запити для адаптивності */
 @media (max-width: 768px) {
   .nav {
-    display: none; /* Ховаємо звичайне меню на мобільних */
+    display: none;
   }
 
   .menuButton {
     display: block;
-    fill: #fafdf2;
-    stroke: #fafdf2;
-    color: #fafdf2;
   }
 }
 
 @media (min-width: 769px) {
   .mobileMenu {
-    display: none; /* Ховаємо мобільне меню для великих екранів */
+    display: none;
   }
 }
