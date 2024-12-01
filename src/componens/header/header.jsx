@@ -26,7 +26,7 @@ const Header = () => {
         {/* Кнопка для відкриття мобільного меню */}
         <button className={styles.menuButton} onClick={toggleMenu}>
           <svg width="23px" height="23px" className={styles.menuIcon}>
-            <use href="/images/icons.svg#menu" />
+            <use href="../../../public/icons.svg#menu" />
           </svg>
         </button>
       </header>
@@ -42,7 +42,7 @@ const Header = () => {
           onClick={toggleMenu}
         >
           <svg width="23px" height="23px" className={styles.menuIcon}>
-            <use href="/images/icons.svg#close-menu" />
+            <use href="../../../public/icons.svg#close-menu" />
           </svg>
         </button>
         <nav>
