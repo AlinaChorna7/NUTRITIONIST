@@ -18,6 +18,16 @@
   margin-top: 2px;
 }
 
+.logoHeader{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.logo-header{
+  fill: #cbea7b;
+
+}
 /* Навігація */
 .nav {
   display: flex;
@@ -44,9 +54,10 @@
 }
 
 .menuIcon {
-  fill: #fafdf2;
-  stroke: #fafdf2;
+  
+stroke: #cbea7b;
 }
+
 
 /* Мобільне меню */
 .mobileMenu {
@@ -63,25 +74,37 @@
   z-index: 1000;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+  overflow-y: auto; /* Дозволяємо прокручувати вміст меню */
 }
 
 .mobileMenu.open {
   transform: translateX(0);
 }
 
-.mobileMenu .closeButton {
+/* Закрити кнопку */
+.closeButton {
   position: absolute;
   top: 20px;
   right: 20px;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 1100;
 }
 
+/* Зміна фону сторінки */
+body.menu-open {
+  overflow: hidden;
+}
+
+.closeHeader{
+  fill: #cbea7b;
+}
 .mobileMenu nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 .mobileMenu a {
@@ -95,7 +118,6 @@
   color: #cbea7b;
 }
 
-/* Медіа-запити для адаптивності */
 @media (max-width: 768px) {
   .nav {
     display: none;

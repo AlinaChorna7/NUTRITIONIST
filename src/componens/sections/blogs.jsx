@@ -16,7 +16,7 @@ return(
       <li className='blogs-item'><div className="blogs-box">
      <div className="blogs-card">
        <img
-        src="../../../public/images/blogs-water.png"
+        src="../../../images/blogs-water.png"
         alt="woman drink water"
         className="blogs-photo"
       />

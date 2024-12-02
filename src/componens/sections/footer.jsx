@@ -29,7 +29,7 @@ return(
       </div>
       <div className="scroll-up">
       <button className="scroll-up-button">
-        Go to Top <div className="scroll-up-icon">
+      <a href="/index.html">  Go to Top</a> <div className="scroll-up-icon">
           <svg width="24px" height="24px">
           <use href="../../../images/icons.svg#scroll-icon"></use>
         </svg>

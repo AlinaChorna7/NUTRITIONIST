@@ -12,7 +12,11 @@ return ( <div id="features" className="features">
       <ul className="features-list">
         <li className="features-item">
           <div className="feature-head">
-           
+            <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-cameramacro-2'/>
+           </svg>
+           </div>
             <h3 className="features-header">Personalized Nutrition Plans</h3>
           </div>
           <div className="feat-p">
@@ -26,9 +30,11 @@ return ( <div id="features" className="features">
         </li>
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-two"></use>
-            </svg>
+          <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-graduationcapfill'/>
+           </svg>
+           </div>
             <h3 className="features-header">
               Guidance from Certified Nutritionists
             </h3>
@@ -45,9 +51,11 @@ return ( <div id="features" className="features">
         </li>
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-three"></use>
-            </svg>
+          <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-Icon-1'/>
+           </svg>
+           </div>
             <h3 className="features-header">Food Tracking and Analysis</h3>
           </div>
           <div className="feat-p">
@@ -61,9 +69,11 @@ return ( <div id="features" className="features">
         </li>
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-four"></use>
-            </svg>
+          <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-walletpassfill'/>
+           </svg>
+           </div>
             <h3 className="features-header">Meal Planning and Recipes</h3>
           </div>
 
@@ -78,9 +88,11 @@ return ( <div id="features" className="features">
         </li>
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-five"></use>
-            </svg>
+          <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-Group'/>
+           </svg>
+           </div>
             <h3 className="features-header">
               Lifestyle and Behavior Coaching
             </h3>
@@ -97,9 +109,11 @@ return ( <div id="features" className="features">
         </li>
         <li className="features-item">
           <div className="feature-head">
-            <svg width="34px" height="34px" className="feat-svg">
-              <use href="../../../images/icons.svg#features-six"></use>
-            </svg>
+          <div className='feat-icons'>
+           <svg width="24" height="24" className="feat-icon">
+            <use href='/images/icons.svg#icon-backpackfill'/>
+           </svg>
+           </div>
             <h3 className="features-header">
               Nutritional Education and Workshops
             </h3>

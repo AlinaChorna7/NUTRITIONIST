@@ -36,6 +36,16 @@ color:#333;
     gap: 20px;
 }
 
+.feat-icons{
+
+border-radius: 6px;
+padding: 12px;
+background-color: #cbea7b;
+}
+
+.feat-icon{
+    fill:  #262626;
+}
 
 .features-item{
     width: 358px;
@@ -53,6 +63,8 @@ color:#333;
 
 .feature-head{
     display: flex;
+    flex-direction: row;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }

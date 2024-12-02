@@ -12,6 +12,9 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.logoHeader}>
+          <svg width="34px" height="34px" className="logo-header">
+            <use href="/images/icons.svg#icon-logo"/>
+          </svg>
           <h2 className={styles.HeaderTitle}>Nutritionist</h2>
         </div>
 
@@ -26,7 +29,7 @@ const Header = () => {
         {/* Кнопка для відкриття мобільного меню */}
         <button className={styles.menuButton} onClick={toggleMenu}>
           <svg width="23px" height="23px" className={styles.menuIcon}>
-            <use href="../../../public/icons.svg#menu" />
+            <use href="/images/icons.svg#icon-menu" />
           </svg>
         </button>
       </header>
@@ -41,8 +44,8 @@ const Header = () => {
           className={styles.closeButton}
           onClick={toggleMenu}
         >
-          <svg width="23px" height="23px" className={styles.menuIcon}>
-            <use href="../../../public/icons.svg#close-menu" />
+          <svg width="40px" height="40px" className={styles.closeHeader}>
+            <use href="/images/icons.svg#icon-x-mark" />
           </svg>
         </button>
         <nav>

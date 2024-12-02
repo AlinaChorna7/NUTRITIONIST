@@ -1,0 +1,136 @@
+.testemonials{
+  width: 358px;
+  margin-top: 50px;
+}
+
+.testi-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-content {
+  background-color: #f8fce4; /* М'який світло-зелений фон */
+  border-radius: 15px; /* Закруглені кути */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  margin: 10px;
+  text-align: center;
+}
+
+.testi-up{
+  padding: 0 auto;
+  margin: 0 auto ;
+}
+
+.icon-review-testi {
+  fill: #6ab04c; /* Зелений колір для іконки */
+}
+
+.testi-text {
+  font-size: 16px;
+  color: #333; /* Темно-сірий текст */
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.testi-down {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.testi-down img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Робимо зображення круглим */
+  object-fit: cover;
+}
+
+.review-author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(255, 255, 255, 0.7); /* Легкий білий фон */
+  border-radius: 50%; /* Кругла форма */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px; /* Зсув вліво */
+}
+
+.swiper-button-next {
+  right: 10px; /* Зсув вправо */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px; /* Розмір стрілок */
+  color: #333; /* Темно-сірий колір для стрілок */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 1); /* Яскравіший фон при ховері */
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: rgba(255, 255, 255, 0.5); /* М'якший фон при натисканні */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .testemonials {
+    width: 90%; /* Розширюємо слайдер */
+    margin: 0 auto; /* Центруємо */
+  }
+
+  .swiper-content {
+    width: 250px; /* Встановлюємо однакову ширину всіх відгуків */
+    height: auto; /* Встановлюємо однакову висоту */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px auto; /* Вирівнюємо відгуки */
+  }
+
+  .testi-text {
+    font-size: 14px; /* Трохи менший текст */
+  }
+
+  .testi-down img {
+    width: 50px; /* Збільшуємо аватарки */
+    height: 50px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    background-size: 70%; /* Менший розмір SVG для планшетів */
+  }
+}
