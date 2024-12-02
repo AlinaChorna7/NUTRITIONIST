@@ -14,18 +14,19 @@ export default function Testemonials() {
       <p className='testi-p'>Our satisfied clients share their success stories and experiences on their journey to better health and well-being.</p>
       </div>
       <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={{ clickable: true }}
-        mousewheel={true}
-        keyboard={true}
-        slidesPerView={1}
-        breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
+          cssMode={true}
+          navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+          pagination={{ clickable: true, el: '.swiper-pagination' }}
+          loop={false}
+          mousewheel={true}
+          keyboard={true}
+          slidesPerView={1}
+          breakpoints={{
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className="mySwiper"
       >
         <SwiperSlide>
           <div className="swiper-content">
@@ -104,6 +105,11 @@ export default function Testemonials() {
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className="swiper-controls">
+  <button className="swiper-button-prev">‹</button>
+  <button className="swiper-button-next">›</button>
+  <div className="swiper-pagination"></div>
+</div>
     </div>
   );
 }

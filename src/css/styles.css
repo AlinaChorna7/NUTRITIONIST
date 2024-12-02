@@ -1,6 +1,8 @@
 .testemonials{
   width: 358px;
-  margin-top: 50px;
+  margin-top: 55px;
+  padding: 0 10px; 
+  box-sizing: border-box; 
 }
 
 .testi-header{
@@ -20,13 +22,11 @@
 }
 
 .testi-up{
-  padding: 0 auto;
+ 
   margin: 0 auto ;
 }
 
-.icon-review-testi {
-  fill: #6ab04c; /* Зелений колір для іконки */
-}
+
 
 .testi-text {
   font-size: 16px;
@@ -55,63 +55,95 @@
   font-size: 14px;
   font-weight: bold;
   color: #333;
-  margin: 0;
+ text-align: center;
 }
-
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: rgba(255, 255, 255, 0.7); /* Легкий білий фон */
+  background-color: #ffffff; 
+  background-color: azure;
+
   border-radius: 50%; /* Кругла форма */
-  width: 40px;
-  height: 40px;
+  border-color: #6ab04c;;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+  
+  margin-top: 10px;
+}
+
+.swiper-controls{
+display: flex;
 }
 
 .swiper-button-prev {
-  left: 10px; /* Зсув вліво */
+  margin-right: 10px;
 }
 
 .swiper-button-next {
-  right: 10px; /* Зсув вправо */
+margin-left: 10px;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 20px; /* Розмір стрілок */
-  color: #333; /* Темно-сірий колір для стрілок */
+  font-size: 18px; /* Розмір стрілок */
+  color: #6ab04c; /* Зелений колір стрілок */
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: rgba(255, 255, 255, 1); /* Яскравіший фон при ховері */
+  background-color: #f8fce4; /* М'який зелений фон при ховері */
 }
 
 .swiper-button-prev:active,
 .swiper-button-next:active {
-  background-color: rgba(255, 255, 255, 0.5); /* М'якший фон при натисканні */
+  transform: translateY(-50%) scale(0.95); /* Легка анімація при кліку */
+}
+.swiper-button-disabled {
+  opacity: 0.5; /* Напівпрозорість для неактивних кнопок */
+  pointer-events: none; /* Вимкнення кліків */
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+.swiper-pagination {
+ margin-top: 20px;
+ text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d4e8c6; /* Світло-зелений колір для точок */
+
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #6ab04c; /* Основний зелений колір для активної точки */
+  transform: scale(1.2); /* Збільшення активної точки */
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px)  {
   .testemonials {
-    width: 90%; /* Розширюємо слайдер */
-    margin: 0 auto; /* Центруємо */
+    width: 750px; /* Розширюємо слайдер */
+    
   }
 
   .swiper-content {
-    width: 250px; /* Встановлюємо однакову ширину всіх відгуків */
-    height: auto; /* Встановлюємо однакову висоту */
+    /* width: 250px; 
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin: 10px auto; /* Вирівнюємо відгуки */
+    margin: 10px auto; */
+    width: auto;
+    padding: 15px;
   }
 
   .testi-text {
