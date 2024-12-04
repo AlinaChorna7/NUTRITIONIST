@@ -1,8 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import '../../css/styles.css';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
@@ -108,7 +106,7 @@ export default function Testemonials() {
       <div className="swiper-controls">
   <button className="swiper-button-prev">‹</button>
   <button className="swiper-button-next">›</button>
-  <div className="swiper-pagination"></div>
+  
 </div>
     </div>
   );

@@ -10,7 +10,7 @@
 
 /* Лого */
 .HeaderTitle {
-  font-family: "Inter", sans-serif;
+ 
   font-size: 28px;
   font-weight: bold;
   color: #fff;
@@ -25,7 +25,9 @@
 }
 
 .logo-header{
-  fill: #cbea7b;
+fill: #cbea7b;
+
+
 
 }
 /* Навігація */
@@ -37,8 +39,10 @@
 .nav a {
   text-decoration: none;
   color: #fafdf2;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
 }
 
 .nav a:hover {
@@ -54,7 +58,7 @@
 }
 
 .menuIcon {
-  
+  fill: #cbea7b;
 stroke: #cbea7b;
 }
 
@@ -98,7 +102,7 @@ body.menu-open {
 }
 
 .closeHeader{
-  fill: #cbea7b;
+  fill:#fafdf2;
 }
 .mobileMenu nav {
   display: flex;

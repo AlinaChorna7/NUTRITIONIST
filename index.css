@@ -36,7 +36,7 @@ img{
     --second-family: "Inter", sans-serif;
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
  .container{
     margin: 0;
     padding: 0 20px; 

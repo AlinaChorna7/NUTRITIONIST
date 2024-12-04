@@ -93,7 +93,7 @@ text-align: start;
 
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
     .start-photo{
  border-radius: 0 0 50px 0;
  width: 710px;

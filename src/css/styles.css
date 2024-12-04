@@ -3,6 +3,7 @@
   margin-top: 55px;
   padding: 0 10px; 
   box-sizing: border-box; 
+  margin-bottom: 50px;
 }
 
 .testi-header{
@@ -13,12 +14,33 @@
 }
 
 .swiper-content {
-  background-color: #f8fce4; /* М'який світло-зелений фон */
-  border-radius: 15px; /* Закруглені кути */
+  background-color: #f6fbe9; 
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   margin: 10px;
   text-align: center;
+}
+
+
+.testi-p{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+  margin-top: 6px;
+  margin-bottom: 50px;
+}
+
+
+.testi-title{
+  font-family: var(--font-family);
+  font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+text-align: center;
+color: #262626;
 }
 
 .testi-up{
@@ -29,11 +51,11 @@
 
 
 .testi-text {
-  font-size: 16px;
-  color: #333; /* Темно-сірий текст */
-  line-height: 1.6;
-  text-align: center;
-  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+color: #333;
   padding: 0 10px;
 }
 
@@ -59,45 +81,45 @@
 }
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: #ffffff; 
-  background-color: azure;
-
-  border-radius: 50%; /* Кругла форма */
-  border-color: #6ab04c;;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 32px;
+  border: 1px solid #eef8d3;
+border-radius: 6px;
+width: 48px;
+height: 48px;
+background: #f6fbe9;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  
+ display: flex;
+ align-items: center;
+ justify-content: center;
   margin-top: 10px;
 }
 
 .swiper-controls{
 display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+gap: 40px;
 }
 
-.swiper-button-prev {
-  margin-right: 10px;
-}
 
-.swiper-button-next {
-margin-left: 10px;
-}
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 18px; /* Розмір стрілок */
-  color: #6ab04c; /* Зелений колір стрілок */
+  border: 1px solid #eef8d3;
+border-radius: 6px;
+
+width: 48px;
+height: 48px;
+background: #f6fbe9;
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: #f8fce4; /* М'який зелений фон при ховері */
+  background-color:  #fafdf2; /* М'який зелений фон при ховері */
 }
 
 .swiper-button-prev:active,
@@ -109,23 +131,7 @@ margin-left: 10px;
   pointer-events: none; /* Вимкнення кліків */
 }
 
-.swiper-pagination {
- margin-top: 20px;
- text-align: center;
-}
 
-.swiper-pagination-bullet {
-  background-color: #d4e8c6; /* Світло-зелений колір для точок */
-
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #6ab04c; /* Основний зелений колір для активної точки */
-  transform: scale(1.2); /* Збільшення активної точки */
-  transition: transform 0.3s ease;
-}
 
 @media (min-width: 768px)  {
   .testemonials {
@@ -134,14 +140,7 @@ margin-left: 10px;
   }
 
   .swiper-content {
-    /* width: 250px; 
-    height: auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin: 10px auto; */
+
     width: auto;
     padding: 15px;
   }
@@ -163,6 +162,20 @@ margin-left: 10px;
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    background-size: 70%; /* Менший розмір SVG для планшетів */
+   width: 50px;
+   height: 50px;
+  }
+}
+
+@media (min-width:  1200px){
+  .testemonials{
+width: 1180px;
+  }
+  .swiper-content{
+   height: 270px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
   }
 }
