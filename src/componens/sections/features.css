@@ -48,7 +48,7 @@ background-color: #cbea7b;
 }
 
 .features-item{
-    width: 358px;
+    width: auto;
     border: 1px solid #e5f5bd;
     border-radius: 10px;
     padding: 30px;

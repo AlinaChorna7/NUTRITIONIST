@@ -2,12 +2,12 @@
 
 .foot-container{
     margin: 0;
-    padding: 20px 20px; 
+    padding: 10px 10px; 
     background-color: #1a3129;
 }
 
 .footer-up{
-    padding: 30px 16px ;
+    padding: 30px 10px ;
 }
 
 .footer-div{
@@ -26,7 +26,7 @@
 }
 
 .footer-title{
-    font-size: 28px;
+    font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -60,7 +60,7 @@
   
 .scroll-up-text{
     font-family: var(--font-family);
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 150%;
 }
@@ -114,7 +114,7 @@ line-height: 150%;
     border: 1px solid #2c5446;
 border-radius: 4px;
 padding: 12px;
-width: 318px;
+width: 260px;
 
 
   }
@@ -152,6 +152,9 @@ width: 318px;
         
         .foot-container{
             padding: 40px 80px;
+        }
+        .footer-title{
+          font-size: 28px;
         }
 
         .footer-menu_div{
