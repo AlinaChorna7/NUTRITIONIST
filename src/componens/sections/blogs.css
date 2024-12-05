@@ -18,6 +18,12 @@ color: #262626;
 
 }
 
+.blogs-list{
+    display: flex;
+    flex-direction: column;
+gap: 10px;
+}
+
 .blogs-text{
     font-family: var(--font-family);
     font-weight: 500;
@@ -45,7 +51,7 @@ transition: background-color 0.3s ease, transform 0.2s ease-in-out;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+   
 }
 
 .blogs-photo{
@@ -116,7 +122,7 @@ background-color:  #fafdf2;
     }
 
   .blogs-list{
-    display: flex;
+
   flex-direction: row;
  justify-content: center;
     flex-wrap:wrap; 
