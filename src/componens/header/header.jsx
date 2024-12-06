@@ -12,7 +12,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.logoHeader}>
-        <svg width="34px" height="34px" className="logo-header">
+        <svg width="34px" height="34px" className="logo-header" style={{ fill: "#cbea7b" }} >
           <use href="/images/icons.svg#icon-logo"></use>
         </svg>
           <h2 className={styles.HeaderTitle}>Nutritionist</h2>
