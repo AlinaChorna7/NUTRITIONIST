@@ -51,6 +51,7 @@ display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
+    padding-left: 15px;
 }
 
 .blogs-box:hover{
@@ -143,4 +144,7 @@ background-color:  #fafdf2;
     width: 500px;
   }
 
+  .blogs-text-container{
+    padding-left: 0;
+  }
 }
