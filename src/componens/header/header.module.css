@@ -63,7 +63,7 @@ img{
   color: #fafdf2;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 150%;
 }
 
@@ -149,6 +149,10 @@ body.menu-open {
     display: none;
   }
 
+.nav a{
+  font-size: 14px;
+}
+
   .menuButton {
     display: block;
   }
@@ -158,4 +162,7 @@ body.menu-open {
   .mobileMenu {
     display: none;
   }
+
+
+  
 }

@@ -44,13 +44,12 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    
     background-color:  #234338;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
-    font-size: 16px;
     transition: color 0.3s ease;
   }
   
@@ -60,9 +59,9 @@
   
 .scroll-up-text{
     font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
+font-weight: 300;
+font-size: 14px;
+/* line-height: 150%; */
 }
 
   .scroll-up-icon {
@@ -157,12 +156,21 @@ width: 260px;
           font-size: 28px;
         }
 
+        .header-svg{
+          width: 34px;
+          height: 34px;
+        }
+
         .footer-menu_div{
             margin-top: 0;
         }
 
         .footer-menu{
             gap: 25px;
+        }
+
+        .scroll-up-button{
+          padding: 10px 10px;
         }
 
     .footer-down{

@@ -8,7 +8,7 @@ return(
       <div className="footer-up">
       <div href="./index.html" className="footer-div">
       <div className='footer-logo'>
-        <svg width="34px" height="34px" className="header-svg">
+        <svg width="30px" height="30px" className="header-svg">
           <use href="../../../images/icons.svg#icon-logo"></use>
         </svg>
         <h2 className='footer-title'>Nutritionist</h2>
