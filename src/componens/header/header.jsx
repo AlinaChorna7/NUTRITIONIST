@@ -21,9 +21,10 @@ const Header = () => {
         {/* Навігація для великих екранів */}
         <nav className={styles.nav}>
           <a href="#home">Home</a>
+          <a href="#features">Features</a>
           <a href="#blogs">Blogs</a>
           <a href="#testemonials">Testimonials</a>
-          <a href="#features">Features</a>
+          
         </nav>
 
         {/* Кнопка для відкриття мобільного меню */}
@@ -52,15 +53,16 @@ const Header = () => {
           <a href="#home" onClick={toggleMenu}>
             Home
           </a>
+          <a href="#features" onClick={toggleMenu}>
+            Features
+          </a>
           <a href="#blogs" onClick={toggleMenu}>
             Blogs
           </a>
           <a href="#testemonials" onClick={toggleMenu}>
             Testimonials
           </a>
-          <a href="#features" onClick={toggleMenu}>
-            Features
-          </a>
+    
         </nav>
       </div>
     </>
