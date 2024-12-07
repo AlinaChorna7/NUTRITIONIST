@@ -21,6 +21,7 @@ return(
         alt="woman drink water"
         className="blogs-photo"
       />
+      <div className='blogs-text-container'>
       <h4 className="blogs-subtitle">Weight Loss</h4>
       <h3 className="blogs-box-title">
         <a
@@ -35,7 +36,7 @@ return(
         Discover how staying hydrated can support your weight loss goals
         and improve overall health.
       </p>
-     
+      </div>
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author-two.png"
@@ -56,6 +57,7 @@ return(
         alt="woman with apple and burger"
         className="blogs-photo"
       />
+        <div className='blogs-text-container'>
       <h4 className="blogs-subtitle">Mindful Eating</h4>
       <h3 className="blogs-box-title">
         <a
@@ -69,6 +71,7 @@ return(
         healthier relationship with food and improve your overall
         well-being.
       </p>
+      </div>
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author-three.png"
@@ -88,6 +91,7 @@ return(
         alt="two females with food in hands"
         className="blogs-photo"
       />
+         <div className='blogs-text-container'>
       <h4 className="blogs-subtitle">Understanding Macronutrients</h4>
       <h3 className="blogs-box-title">
         <a
@@ -100,6 +104,7 @@ return(
         Get a comprehensive understanding of macronutrients and their role
         in your diet for optimal health and weight management.
       </p>
+      </div>
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author.png"
@@ -115,6 +120,7 @@ return(
 </li>
       <li className='blogs-item'> <div className="blogs-box">
       <img src="../../../images/blogs-food.jpg" alt="food" className="blogs-photo" />
+      <div className='blogs-text-container'>
       <h4 className="blogs-subtitle">Healthy Snacks on the Go</h4>
       <h3 className="blogs-box-title">
         <a href="https://www.eatthis.com/grab-and-go/" target="_blank"
@@ -124,7 +130,7 @@ return(
       <p className="blogs-p">
         Explore a variety of convenient and healthy snack ideas to keep
         you fueled throughout the day.
-      </p>
+      </p> </div>
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author-four.png"
