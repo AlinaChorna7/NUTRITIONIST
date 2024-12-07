@@ -39,6 +39,10 @@ border-radius: 10px;
 padding: 24px;
 background-color: #f6fbe9;
 transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .blogs-box:hover{
@@ -51,6 +55,7 @@ transition: background-color 0.3s ease, transform 0.2s ease-in-out;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
    
 }
 
@@ -65,7 +70,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 150%;
 color: #333;
-
+text-align: left;
 }
 
 .blogs-box-title{
@@ -75,7 +80,7 @@ font-size: 20px;
 line-height: 150%;
 color: #262626;
 transition: color 0.2s ease-in-out;
-text-align: center;
+text-align: left;
 }
 .blogs-box-title:hover{
     color: #cbea7b;
@@ -87,6 +92,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 150%;
 color: #4c4c4d;
+text-align: left;
 }
 
 .blogs-author{

@@ -13,8 +13,9 @@ return(
       </p>
     </div>
     <ul className='blogs-list'>
-      <li className='blogs-item'><div className="blogs-box">
-     <div className="blogs-card">
+      <li className='blogs-item'>
+        <div className="blogs-box">
+   
        <img
         src="../../../images/blogs-water.png"
         alt="woman drink water"
@@ -34,7 +35,7 @@ return(
         Discover how staying hydrated can support your weight loss goals
         and improve overall health.
       </p>
-      </div>
+     
       <div className="blogs-author">
         <img
           src="../../../images/blogs-author-two.png"
@@ -46,8 +47,10 @@ return(
           <li className="blogs-author-desc">23 May 2023</li>
         </ul>
       </div>
-    </div></li>
-      <li className='blogs-item'> <div className="blogs-box">
+      </div>
+    </li>
+      <li className='blogs-item'>
+         <div className="blogs-box">
       <img
         src="../../../images/blogs-choosing.jpg"
         alt="woman with apple and burger"
@@ -105,7 +108,7 @@ return(
         />
         <ul className="blogs-author-info">
           <li className="blogs-author-name">Mark Wilson</li>
-          <li className="blogs-author-dsc">29 September 2023</li>
+          <li className="blogs-author-desc">29 September 2023</li>
         </ul>
       </div>
     </div>
@@ -129,8 +132,8 @@ return(
           className="blogs-author-photo"
         />
         <ul className="blogs-author-info">
-          <li className="blogs-author-name">Emily Johnson</li>
-          <li className="blogs-author-dsc">7 Decembre 2023</li>
+          <li className="blogs-author-name">Elisa Smith</li>
+          <li className="blogs-author-desc">7 December 2023</li>
         </ul>
       </div>
     </div></li>
